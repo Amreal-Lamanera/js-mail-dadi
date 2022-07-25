@@ -30,4 +30,3 @@ btnElement.addEventListener('click', function () {
         winner.innerHTML = 'Pareggio!';
     }
 })
-
