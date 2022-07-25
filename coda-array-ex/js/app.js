@@ -17,5 +17,5 @@ console.log('Estrazione:');
 // - PER OGNI i = array.length; i > array.length-5 ; i--
 for (let i = myArray.length; i > myArray.length - 5; i--) {
     // - Stampa array[i-1]
-    console.log(i + ': ' + myArray[i - 1]);
+    console.log('Estrazione elemento numero: ' + i + ' => ' + myArray[i - 1]);
 }

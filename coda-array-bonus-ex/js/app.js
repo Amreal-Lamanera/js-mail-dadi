@@ -18,7 +18,7 @@ if (arrayLen > 0 && !isNaN(arrayLen)) {
         // - PER OGNI i = array.length; i > array.length-numero da estrarre ; i--
         for (let i = myArray.length; i > myArray.length - iLen; i--) {
             // - Stampa array[i-1]
-            console.log(i + ': ' + myArray[i - 1]);
+            console.log('Estrazione elemento numero: ' + i + ' => ' + myArray[i - 1]);
         }
     } else {
         // - SE numero negativo || non è un numero || numero da estrarre > array.length
