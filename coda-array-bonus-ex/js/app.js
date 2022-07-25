@@ -2,7 +2,7 @@ const myArray = [];
 
 // - Chiedi all'utente quanti elementi dovrà contenere l'array
 const arrayLen = parseInt(prompt("Quanti elementi vuoi inserire nell'array?"));
-console.log(arrayLen);
+// console.log(arrayLen);
 
 if (arrayLen > 0 && !isNaN(arrayLen)) {
     // - Chiedi all'utente quanti elementi estrarre
