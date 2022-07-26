@@ -9,11 +9,11 @@ const winner = document.getElementById('winner');
 btnElement.addEventListener('click', function () {
     // console.log('js ok2');
     // - Genera un numero per il giocatore
-    const playerNum = Math.floor(Math.random() * (7 - 1)) + 1;
+    const playerNum = Math.floor(Math.random() * 6) + 1;
     yourResult.innerHTML = 'Hai fatto: ' + playerNum;
     // console.log(playerNum);
     // - Genera un numero per il computer
-    const pcNum = Math.floor(Math.random() * (7 - 1)) + 1;
+    const pcNum = Math.floor(Math.random() * 6) + 1;
     myResult.innerHTML = 'Io ho fatto: ' + pcNum;
 
     // - SE playerNum > pcNum

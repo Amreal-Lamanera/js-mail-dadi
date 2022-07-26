@@ -10,15 +10,15 @@ if (arrayLen > 0 && !isNaN(arrayLen)) {
     if (iLen > 0 && !isNaN(iLen) && iLen <= arrayLen) {
         // - Crea l'array contenente tanti elementi quanti ne vuole l'utente
         for (let i = 0; i < arrayLen; i++) {
-            myArray.push(i);
+            myArray.push(Math.floor(Math.random() * (arrayLen + 1)));
         }
         console.log('Il mio array: ', myArray);
         console.log('');
         console.log('Estrazione:');
         // - PER OGNI i = array.length; i > array.length-numero da estrarre ; i--
-        for (let i = myArray.length; i > myArray.length - iLen; i--) {
+        for (let i = myArray.length - 1; i > myArray.length - iLen - 1; i--) {
             // - Stampa array[i-1]
-            console.log('Estrazione elemento numero: ' + i + ' => ' + myArray[i - 1]);
+            console.log('Estrazione elemento numero: ' + i + ' => ' + myArray[i]);
         }
     } else {
         // - SE numero negativo || non è un numero || numero da estrarre > array.length
